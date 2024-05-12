@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c1.css' %}">
+    <style>
+        img{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>VIRAT KOHLI</h1>
+        <img src="{% static 'images/kohli.avif' %}" alt="">
+        <a href="{% url 'app3:rohit' %}">go to rohit page</a>
+        <a href="{% url 'app1:dhoni' %}">go to dhoni page</a>
+    </center>
+</body>
+</html>
